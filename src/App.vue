@@ -5,5 +5,5 @@ import { RouterView } from 'vue-router';
 
 <template>
   <Navbar />
-  <RouterView />
+  <RouterView /> <!-- In your App.vue ,You inport RouterView and use it,Like outlet in React.js, this is where the view/page will show -->
 </template>
