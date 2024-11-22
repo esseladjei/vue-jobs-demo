@@ -1,43 +1,44 @@
-# Vue Jobs Project (YouTube)
+# React Jobs Demo
 
-This is the jobs listing project from the [YouTube crash course](https://www.youtube.com/watch?v=VeNfHj6MhgA).
+This project is a single-page application built with **React**, **Vite**, and **Tailwind CSS**. It includes a mock backend using **JSON Server** to serve data for development purposes. The app is styled with **Tailwind CSS** and follows best practices for a modern frontend development workflow.
 
-<img src="public/screen.png" />
+## Features
 
-## Usage
+- **React + Vite**: A fast development environment with hot module replacement (HMR).
+- **Tailwind CSS**: Utility-first CSS for rapid UI development.
+- **JSON Server**: A lightweight REST API to simulate a backend.
+- **Dockerized**: Easily run the app and mock backend in isolated containers.
 
-This project uses JSON-Server for a mock backend.
+---
 
-### Install Dependencies
+## Project Structure
 
-```bash
-npm install
-```
+- **Frontend**: Built with React and Vite, served on `http://localhost:3000`.
+- **Mock Backend**: JSON Server serves the `jobs.json` file on `http://localhost:8000`.
 
-### Run JSON Server
+---
 
-The server will run on http://localhost:8000
+## Prerequisites
 
-```bash
-npm run server
-```
+### 1. For Local Setup
 
-### Run Vite Frontend
+- **Node.js** (v18 or later) and npm installed.
+- Optionally, install **JSON Server** globally for the backend:
 
-Vue will run on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-### Build for Production
+- run local dev database server
 
 ```bash
-npm run build
+npm run server 
 ```
 
-### Preview Production Build
+- run application
 
 ```bash
-npm run preview
+npm run dev 
 ```
+
+- optional: To install json-server
+
+  ```bash
+  npm install -g json-server
+
